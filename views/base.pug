@@ -1,0 +1,21 @@
+doctype html 
+html 
+    head 
+        title Alfej Mansuri 
+        script(src="../static/base.js")
+        block script
+        style    
+            include ../static/base.css
+        block style 
+    body 
+        navbar#navbar 
+            div#name
+                h1 Alfej Mansuri
+            ul  
+                li #[a(href='/') Home]
+                li #[a(href='/about') About me]
+                li #[a(href='/contactme') contact me]
+            div#dark 
+                button#btn(onclick='darkmode()') switch mode 
+        block content 
+        block footer

@@ -1,0 +1,36 @@
+extends base.pug 
+
+block script 
+    script(src='/static/index.js')
+block style 
+    style 
+        include ../static/contact.css
+block content 
+    div.container 
+        h1 Contact Me
+        form(action="/contactme", method="post" class="myform")
+            input(type="text",class="myinput",name="name",placeholder="enter your name" required)
+            input(type="phone",class="myinput",name="phone",placeholder="enter your phone no" required)
+            input(type="email",class="myinput",name="email",placeholder="enter your email" required)
+            button(class="btn")
+                | submit 
+    div.profiles   
+        h1 Coding Profiles
+        div.logos
+            a(href="https://www.hackerrank.com/alfejmansuri136") 
+                img(src="../static/imgs/logo1.png", alt="")
+            a(href="https://codeforces.com/profile/Alfejmansuri136") 
+                img(src="../static/imgs/logo2.jfif", alt="")
+            a(href="https://github.com/Alfej") 
+                img(src="../static/imgs/logo3.png", alt="")
+    div.social
+        div.logo
+            a(href="https://www.facebook.com/alfaij.mansuri") 
+                img(src="../static/imgs/logo4.png", alt="")
+            a(href="https://www.instagram.com/alfejmansuri136/") 
+                img(src="../static/imgs/logo5.jfif", alt="")
+            a(href="https://www.linkedin.com/in/alfej-mansuri-848586195/") 
+                img(src="../static/imgs/logo6.png", alt="")
+block footer 
+    footer#footer 
+            | copyright © 2021 Alfej Mansuri portfolio website | All right reserved

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 90px 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container h1{
+    margin: 5px 5px;
+    font-size: 2.3rem;
+    border-bottom: 2px solid;
+    font-family: 'Permanent Marker', cursive;
+}
+.myform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.myinput{
+    width: 33%;
+    padding: 9px;
+    margin: 8px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    border-radius: 3px;
+    outline: none;
+}
+.btn{
+    padding: 12px 16px;
+    font-size: 1.3rem;
+    margin: 12px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgb(160 116 6);
+    cursor: pointer;
+    outline: none;
+
+
+}
+.profiles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profiles h1{
+    margin: 5px 5px;
+    font-size: 2.3rem;
+    border-bottom: 2px solid;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos img{
+    flex: 1;
+    margin: 10px 60px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+.logos img:hover{
+    height: 250px;
+    width: 250px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    flex: 1;
+    margin: 10px 60px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+.logo img:hover{
+    height: 70px;
+    width: 70px;
+}
+
+.social{
+    margin-top: 180px;
+}
+#footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 60px;
+    background-color: black;
+}
+@media(max-width:1130px){
+    .container{
+        margin:0px;
+        margin-top: 112px;
+    }
+    .myinput{
+        width: 75%;
+    }
+    .btn{
+        width: 75%;
+    }
+    .logos{
+        flex-direction: column;
+    x   }
+}

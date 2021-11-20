@@ -1,0 +1,16 @@
+extends base.pug 
+block script 
+    script(src="../static/home.js")
+block style 
+    style    
+        include ../static/home.css
+
+block content
+    div#content
+        div#img 
+            img(src="../static/photo.jpg", alt="")
+        div#info
+            h1 Alfej Mansuri
+            p A full stack developer and a competitve coder 
+            div#know
+                a(href="/about") Know more about me.... 

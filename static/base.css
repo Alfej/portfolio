@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    color: white;
+
+}
+body{
+    background-color: inherit;
+    color: inherit;
+    background-color: black;
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar{
+display: flex;
+align-items: center;
+/* justify-content: center; */
+border: 2px solid white;
+height: 60px;
+width: 96%;
+margin: auto;
+margin-top: 10px;
+border-radius: 10px;
+background-color: black;
+position: fixed;
+}
+#navbar ul{
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+
+}
+#navbar ul li{
+list-style: none;
+margin: 23px 17px;
+}
+#name{
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding-right: 333px; */
+    width: 14vw;
+    height: 10vh;
+    /* margin-top: 30px; */
+    /* color: white; */
+    flex: 1;
+} 
+#name h1{
+    font-size: 1.8rem;
+    text-shadow: 1px 1px blue;
+    margin-left: 20px;
+
+}
+#navbar ul li a{
+text-decoration: none;
+/* color: white; */
+color: inherit;
+font-size: 1.3rem;
+font-family: 'Staatliches', cursive;
+padding: 0px 10px;
+} 
+
+#navbar ul li a:hover{
+    text-decoration: underline;
+    font-size: 1.4rem;
+    background-color: rgb(160 116 6);
+    /* border: 1px solid white; */
+    box-shadow: 2px 3px 3px #fa0808;
+    border-radius: 15px;
+    } 
+
+#dark{
+    width: 25vw;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+#btn{
+    padding: 2px 3px;
+    outline: none;
+    background-color: rgb(160 116 6);
+    border: 2px solid white;
+    border-radius: 11px;
+    box-shadow: 2px 3px 3px #fa0808;
+    cursor: pointer;
+    margin-right: 20px;
+}
+@media(max-width:1130px){
+    #name{
+        display: none;
+    }
+    #navbar{
+        height: 100px;
+        width: 100%;
+    }
+    #navbar ul{
+        flex: 3;
+    }
+    #navbar ul li{
+        flex: 1;
+        text-align: center;
+    }
+    #navbar ul li a{
+        font-size: 2.5rem;
+    }
+    #navbar ul li a:hover{
+        font-size: 2.8rem;
+    }
+}

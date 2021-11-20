@@ -1,0 +1,72 @@
+extends base.pug 
+block script 
+    script(src="../static/about.js")
+block style 
+    style    
+        include ../static/about.css
+
+block content
+    div#content
+        div#major
+            div#aboutme
+                div#myinfo.box
+                    h2 About Me
+                    p I am Alfej Mansuri, and I am a Full-stack developer, and a competitive coder.If i talk more about me than i am a college student, and i am very much passionate about my work in these fields. 
+                div#schooling.box
+                    h2 Schooling
+                    ul 
+                        li 
+                            h3 Graduation:
+                            p persuing Bechlore(B.tech) degree in Computer Science from Institute of Technology (ITNU), Nirma University, Ahmedabad 
+                        li 
+                            h3 Senior secondary (XII), Science: 
+                            p completed my XII-science from Bright Junior Science College (BJSC),Modasa in 2019
+                        li 
+                            h3 Secondary(X)
+                            p completed my X schooling from The Makhdum High School,Modasa in 2017 
+            div#photo
+                img(src="../static/photo2.jpeg", alt="")
+        div#skills
+            table#table 
+                caption 
+                    h2 Skills
+                tr 
+                    td.card 
+                        p HTML 
+                            //- p.level(data-key="1") Intermediate
+                    td.card 
+                        p CSS 
+                            //- p.level(data-key="2") Intermediate
+                    td.card 
+                        p JavaScript 
+                            //- p.level(data-key="3") Intermediate
+                    td.card 
+                        p Node js 
+                            //- p.level(data-key="4") Begginer
+                    td.card 
+                        p Express.js 
+                            //- p.level(data-key="5") Begginer
+                    td.card 
+                        p Data 
+                            | Structures 
+                            //- p.level(data-key="6") Intermediate 
+                tr 
+                    td.card 
+                        p mongo db 
+                            //- p.level(data-key="7") Begginer
+                    td.card 
+                        p C++ 
+                            //- p.level(data-key="8") Intermediate
+                    td.card 
+                        p Python 
+                            //- p.level(data-key="9") Intermediate
+                    td.card 
+                        p C language 
+                            //- p.level(data-key="10") Intermediate
+                    td.card 
+                        p java 
+                            //- p.level(data-key="11") Begginer
+                    td.card 
+                        p data 
+                            | Science 
+                            //- p.level(data-key="12") begginer 
