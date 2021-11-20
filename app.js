@@ -5,7 +5,7 @@ mongoose.connect('mongodb://localhost/contactPortfolio',{useNewUrlParser:true});
 const fs = require('fs');
 const bodyparser = require('body-parser');
 const app = express();
-const port = 1000;
+const port = Process.env.PORT || 3000 ;
 
 // define mongoose schima
 var contactSchema = new mongoose.Schema({
